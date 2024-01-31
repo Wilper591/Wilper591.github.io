@@ -52,6 +52,9 @@ nav {
   background-color: var(--cyan);
   padding: 5rem;
 }
+#sectionFormacion {
+  background-color: var(--blanco);
+}
 
 @media (min-width: 996px) {
   #sectionPresentacion {
