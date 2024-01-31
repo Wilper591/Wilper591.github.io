@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+
+  /*Paleta de colores*/
+  --azul-claro: #33acfddc;
+  --azul-oscuro: #0034ce;
+  --azul-gris: #555f89;
+  --cyan: #0082c3;
+  --gris-oscuro: #545454;
+  --blanco: #f7f6f2;
+}
+/* Navbar */
+nav {
+  background-color: var(--cyan);
+}
+/* .navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+} */
+.nav-link,
+.navbar-brand {
+  color: var(--blanco);
+  &:hover {
+    color: var(--gris-oscuro);
+  }
+}
+#sectionPresentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 5rem;
+}
+#fotoJorge {
+  border-radius: 25% 50%;
+  width: 20rem;
+  margin: 3rem;
+}
+#textPresentacion {
+  max-width: 40rem;
+  text-align: justify;
+}
+
+#sectionTrabajos {
+  background-color: var(--cyan);
+  padding: 5rem;
+}
+
+@media (min-width: 996px) {
+  #sectionPresentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
