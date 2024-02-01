@@ -47,19 +47,43 @@ nav {
   max-width: 40rem;
   text-align: justify;
 }
-
 #sectionTrabajos {
   background-color: var(--cyan);
   padding: 5rem;
 }
+#tituloTrabajos {
+  color: var(--blanco);
+}
 #sectionFormacion {
   background-color: var(--blanco);
 }
-
+#sectionFormacion h3 {
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0 0.5rem 0;
+}
+#sectionFormacion p {
+  text-align: justify;
+  padding: 1rem 0 1rem 0;
+}
+#imgCertificado {
+  max-width: 40rem;
+  border: 1px solid black;
+  border-radius: 5%;
+}
 @media (min-width: 996px) {
   #sectionPresentacion {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  #sectionFormacion h3 {
+    font-weight: bold;
+    text-align: justify;
+    padding: 2rem 0 1rem 0;
+  }
+  #sectionFormacion p {
+    text-align: justify;
+    padding: 1rem 0 0 0;
   }
 }
