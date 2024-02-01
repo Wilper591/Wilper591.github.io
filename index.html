@@ -53,7 +53,7 @@
             <div class="navbar-nav ms-auto fw-bold text-end">
               <a class="nav-link" href="#">Inicio</a>
               <a class="nav-link" href="#sectionTrabajos">Trabajos</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#sectionContacto">Contacto</a>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@
         Cursos realizados: UDEMY Desarrollo Web Completo con HTML5, CSS3, JS
         AJAX, PHP y MySQL. (83 horas en total)
       </p>
-      <div class="text-center p-4">
+      <div id="contenedorCertificado" class="p-4">
         <img
           id="imgCertificado"
           class="img-fluid"
@@ -255,5 +255,126 @@
         />
       </div>
     </section>
+    <!-- Contacto -->
+    <section id="sectionContacto">
+      <div id="formularioContainer" class="container-fluid p-4">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ingresa tu nombre"
+          />
+        </div>
+        <div>
+          <label for="exampleFormControlInput1" class="form-label"
+            >Correo electrónico</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Ingresa tu correo electrónico"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label pt-2"
+            >Mensaje</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="Ingresa aquí tu mensaje"
+          ></textarea>
+        </div>
+        <!-- Boton modal -->
+        <button
+          type="button"
+          class="btn btn-info text-white"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Enviar
+        </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Mensaje Enviado
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Tu Mensaje fue enviado Exitosamente!</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-info text-white"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-4">
+      <p class="text-center">© Todos los derechos reservados 2024.</p>
+      <div id="contenedorIcons" class="text-center">
+        <button
+          id="fbIcon"
+          type="button"
+          class="btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-title="FaceBook"
+        >
+          <a target="_blank" href="https://facebook.com/">
+            <i class="fa-brands fa-square-facebook text-white"></i
+          ></a>
+        </button>
+        <button
+          type="button"
+          class="btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-title="GitHub"
+        >
+          <a target="_blank" href="https://github.com"
+            ><i id="ghIcon" class="fa-brands fa-square-github text-white"></i
+          ></a>
+        </button>
+        <button
+          id="inIcon"
+          type="button"
+          class="btn"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          data-bs-title="Linkedin"
+        >
+          <a target="_blank" href="https://www.linkedin.com/"
+            ><i class="fa-brands fa-linkedin text-white"></i
+          ></a>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>

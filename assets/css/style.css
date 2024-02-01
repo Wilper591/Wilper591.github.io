@@ -67,9 +67,34 @@ nav {
   padding: 1rem 0 1rem 0;
 }
 #imgCertificado {
-  max-width: 40rem;
   border: 1px solid black;
   border-radius: 5%;
+}
+#sectionContacto {
+  background-color: var(--cyan);
+  padding: 1rem;
+}
+#formularioContainer {
+  max-width: 40rem;
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.modal-header,
+.modal-body {
+  color: var(--gris-oscuro);
+}
+footer {
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+}
+footer button i {
+  font-size: 3rem;
+  background-color: var(--cyan);
+  padding: 0.3rem;
+  border-radius: 25%;
 }
 @media (min-width: 996px) {
   #sectionPresentacion {
@@ -85,5 +110,11 @@ nav {
   #sectionFormacion p {
     text-align: justify;
     padding: 1rem 0 0 0;
+  }
+  #contenedorCertificado {
+    text-align: center;
+  }
+  #imgCertificado {
+    max-width: 35rem;
   }
 }
