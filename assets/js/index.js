@@ -5,10 +5,4 @@ const tooltipTriggerList = document.querySelectorAll(
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
-/* Ventana Modal */
-const myModal = document.getElementById("myModal");
-const myInput = document.getElementById("myInput");
 
-myModal.addEventListener("shown.bs.modal", () => {
-  myInput.focus();
-});
