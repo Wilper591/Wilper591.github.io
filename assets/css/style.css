@@ -50,6 +50,13 @@ nav {
   background-color: var(--cyan);
   padding: 5rem;
 }
+.card {
+  width: 18rem;
+  height: auto;
+}
+.card-img-top {
+  height: 10rem;
+}
 #tituloTrabajos {
   color: var(--blanco);
 }
