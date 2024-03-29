@@ -58,7 +58,6 @@ nav {
   height: 36rem;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
   position: relative;
   color: #000;
   box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
