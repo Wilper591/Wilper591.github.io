@@ -81,6 +81,7 @@ nav {
     left: 0;
     opacity: 0.9;
     transition: opacity 0.2s ease-out;
+    mask-image: linear-gradient(var(--color-primary-white) 70%, transparent);
   }
   .card-title {
     position: absolute;
@@ -124,6 +125,7 @@ nav {
   &:hover .card-img {
     transition: opacity 0.3s ease-in;
     opacity: 1;
+    mask-image: linear-gradient(var(--color-primary-white) 40%, transparent);
   }
 }
 
