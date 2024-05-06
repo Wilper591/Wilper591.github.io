@@ -19,6 +19,15 @@
 nav {
   background-color: var(--cyan);
 }
+#tecnologias div {
+  height: 8rem;
+}
+svg {
+  width: 5rem;
+  &:hover {
+    width: 6rem;
+  }
+}
 .navbar {
   position: fixed;
   width: 100%;
