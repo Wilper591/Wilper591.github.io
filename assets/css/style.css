@@ -8,16 +8,16 @@
 
   /*Paleta de colores*/
   --azul-claro: #33acfddc;
-  --azul-oscuro: #0034ce;
+  --azul-oscuro: #0e2c40;
   --azul-gris: #555f89;
   --cyan: #0082c3;
   --gris-oscuro: #545454;
-  --blanco: #f7f6f2;
+  --blanco: #f7f5ef;
   --color-primary-white: rgb(240, 240, 240);
 }
 /* Navbar */
 nav {
-  background-color: var(--cyan);
+  background-color: var(--azul-oscuro);
 }
 #tecnologias div {
   height: 8rem;
@@ -49,15 +49,15 @@ svg {
   }
 }
 #sectionPresentacion {
-  display: flex;
-  flex-direction: column;
+  background-color: var(--blanco);
+  justify-content: center;
   align-items: center;
   padding: 3rem;
   gap: 5rem;
 }
 #fotoJorge {
   border-radius: 25% 50%;
-  width: 20rem;
+  width: 25rem;
   margin: 3rem;
   &:hover {
     box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
@@ -68,7 +68,7 @@ svg {
   text-align: justify;
 }
 #sectionTrabajos {
-  background-color: var(--cyan);
+  background-color: var(--azul-oscuro);
   padding: 5rem;
 }
 /* Estilos Card Trabajos */
@@ -158,7 +158,7 @@ svg {
   border-radius: 5%;
 }
 #sectionContacto {
-  background-color: var(--cyan);
+  background-color: var(--azul-oscuro);
   padding: 1rem;
 }
 #formularioContainer {

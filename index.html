@@ -73,17 +73,30 @@
       </nav>
     </header>
     <!-- Presentación -->
-    <section
-      id="sectionPresentacion"
-      class="d-flex align-items-center justify-content-center"
-    >
-      <img
-        id="fotoJorge"
-        class="image-fluid"
-        src="./assets/img/fotoperfil.png"
-        alt="Jorge Cerda"
-      />
-      <div id="tecnologias" class="m-2">
+    <section id="sectionPresentacion" class="row">
+      <div id="textPresentacion" class="col-3">
+        <h2 class="fs-1 fw-bold mb-4 text-center">Información personal</h2>
+        <p>
+          ¡Hola! Soy Jorge Cerda un Desarrollador Junior FullStack JavaScript
+          con un enfoque creciente en el desarrollo de BackEnd.
+        </p>
+        <p>
+          Durante mis estudios, he trabajado en varios repositorios que
+          demuestran mi progreso y habilidades en este campo. Mi objetivo
+          principal es dominar JavaScript para utilizarlo de manera óptima tanto
+          en el FrontEnd como en el BackEnd de mis proyectos futuros.
+        </p>
+        <p>
+          Estoy comprometido con mi desarrollo profesional y continúo avanzando
+          en mi formación.
+        </p>
+        <p>
+          ¡Estoy emocionado por las oportunidades que el futuro tiene reservadas
+          y estoy comprometido a seguir aprendiendo y creciendo en el campo del
+          desarrollo web, especialmente en el ámbito del BackEnd!
+        </p>
+      </div>
+      <div id="tecnologias" class="m-2 col-3">
         <h1 class="fs-1 fw-bold mb-4 text-center">Stack de tecnologías</h1>
         <div class="m-2">
           <p class="m-2 fw-bold">Lenguajes de Programación</p>
@@ -345,20 +358,13 @@
           </svg>
         </div>
       </div>
-      <div id="textPresentacion">
-        <h2 class="fs-1 fw-bold mb-4 text-center">Información personal</h2>
-        <p>
-          Desarrollador Junior en proceso de formación. Te enseño alguno de mis
-          repositorios desarrollados durante mis estudios. Estoy encaminado a
-          formarme como desarrollador FrontEnd. Voy enfocando en aprender
-          JavaScript para poder utilizarlo de forma más optima en mis proyectos.
-          Estoy en busca de trabajo como desarrollador frontEnd. De igual forma
-          sigo en proceso de formación hasta finalizar el bootcamp en el que me
-          encuentro actualmente para ser un Desarrollador Full Stack en
-          JavaScript. Tengo conocimientos básicos en HTML5, CSS3, SCSS, JS AJAX
-          PHP y MySQL. Actualmente estudiando JavaScript en Bootcamp Talento
-          Digital.
-        </p>
+      <div class="col-4">
+        <img
+          id="fotoJorge"
+          class="image-fluid"
+          src="./assets/img/fotoperfil.png"
+          alt="Jorge Cerda"
+        />
       </div>
     </section>
     <!-- Trabajos -->
@@ -637,6 +643,7 @@
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
+            <!-- Inicio accordion-body #3 -->
             <div class="accordion-body">
               <div
                 class="row align-items-center justify-content-center"
@@ -743,30 +750,17 @@
                 </div>
               </div>
             </div>
-            <!-- Fin Accordion-body -->
+            <!-- Fin Accordion-body #3-->
           </div>
         </div>
       </div>
     </section>
     <!-- Formación -->
     <section id="sectionFormacion" class="p-5">
-      <h2 id="tituloFormacion" class="text-center mt-3 fs-1 fw-bold">
-        Formación Académica
-      </h2>
-      <h3>Enseñanza Básica y Media</h3>
-      <p>Enseñanza Básica y Enseñanza Media: Completa</p>
-      <h3>Enseñanza Superior:</h3>
-      <p>
-        Universidad De Oriente Núcleo Anzoátegui (UDO Anz.). Medicina (Hasta 3er
-        semestre).
-      </p>
-      <p>
-        Instituto Universitario de Tecnología de Administración Industrial
-        (IUTA), Sede Barcelona. (Periodo de Ingreso: 2013-I) Titulo obtenido:
-        “Técnico Superior Universitario en Higiene y Seguridad Industrial”.
-      </p>
-      <h3>Desarrollo Web</h3>
-      <p>
+      <h3 id="tituloFormacion" class="text-center mt-3 fs-1 fw-bold">
+        Desarrollo Web
+      </h3>
+      <p class="text-center">
         Cursos realizados: UDEMY Desarrollo Web Completo con HTML5, CSS3, JS
         AJAX, PHP y MySQL. (83 horas en total)
       </p>
