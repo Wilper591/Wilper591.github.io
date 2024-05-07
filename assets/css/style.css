@@ -174,13 +174,13 @@ svg {
 }
 footer {
   background-color: var(--blanco);
-  display: flex;
-  flex-direction: column;
+  
+  /* flex-direction: column; */
   height: 6rem;
 }
 footer button i {
   font-size: 3rem;
-  background-color: var(--cyan);
+  background-color: var(--azul-oscuro);
   padding: 0.3rem;
   border-radius: 25%;
   &:hover {
@@ -188,6 +188,7 @@ footer button i {
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.7);
   }
 }
+
 @media (min-width: 996px) {
   .nav-link,
   .navbar-brand {
