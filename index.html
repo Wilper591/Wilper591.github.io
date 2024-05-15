@@ -78,7 +78,7 @@
         id="textPresentacion"
         class="m-2 col-12 col-md-12 col-lg-3 col-xxl-3"
       >
-        <h2 class="fs-1 fw-bold mb-4 text-center">Información personal</h2>
+        <h2 class="fs-1 fw-bold my-4 text-center">Información personal</h2>
         <p>
           ¡Hola! Soy Jorge Cerda un Desarrollador Junior FullStack JavaScript
           con un enfoque creciente en el desarrollo de BackEnd.
@@ -361,7 +361,7 @@
           </svg>
         </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-3">
+      <div id="contenedorFoto" class="col-12 col-md-12 col-lg-3 text-center">
         <img
           id="fotoJorge"
           class="image-fluid"
@@ -762,105 +762,45 @@
     </section>
     <!-- Formación -->
     <section id="sectionFormacion" class="p-5">
-      <h3 id="tituloFormacion" class="text-center mt-3 fs-1 fw-bold">
-        Desarrollo Web
-      </h3>
-      <p class="text-center">
-        Cursos realizados: UDEMY Desarrollo Web Completo con HTML5, CSS3, JS
-        AJAX, PHP y MySQL. (83 horas en total)
-      </p>
-      <div id="contenedorCertificado" class="p-4">
-        <img
-          id="imgCertificado"
-          class="img-fluid"
-          src="./assets/img/Certificado.jpg"
-          alt="Certificado Curso Desarrollo Web"
-        />
+      <h3 id="tituloFormacion">Formación en Desarrollo Web</h3>
+      <div class="contenedor-Form">
+        <h4>BootCamp Talento Digital</h4>
+        <h5>Desarrollador FullStack JavaScript</h5>
+        <p>
+          Desarrollo de aplicaciones Web implementando buenas prácticas, tanto
+          en FrontEnd como BackEnd.
+        </p>
+      </div>
+
+      <div class="contenedor-Form">
+        <h4>Cursos realizados:</h4>
+        <h5>
+          <strong>UDEMY:</strong> Desarrollo Web Completo con HTML5, CSS3, JS
+          AJAX, PHP y MySQL. (83 horas en total)
+        </h5>
+        <div id="contenedorCertificado" class="p-4">
+          <img
+            id="imgCertificado"
+            class="img-fluid"
+            src="./assets/img/Certificado.jpg"
+            alt="Certificado Curso Desarrollo Web"
+          />
+        </div>
       </div>
     </section>
     <!-- Contacto -->
     <section id="sectionContacto">
-      <div id="formularioContainer" class="container-fluid p-4">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Nombre</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Ingresa tu nombre"
-          />
-        </div>
-        <div>
-          <label for="exampleFormControlInput1" class="form-label"
-            >Correo electrónico</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Ingresa tu correo electrónico"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label pt-2"
-            >Mensaje</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="Ingresa aquí tu mensaje"
-          ></textarea>
-        </div>
-        <!-- Boton modal -->
-        <button
-          type="button"
-          class="btn btn-secondary text-white"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Enviar
-        </button>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Mensaje Enviado
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">Tu Mensaje fue enviado Exitosamente!</div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-info text-white"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="p-4">
-      <p class="text-center">© Todos los derechos reservados 2024.</p>
+      <h3 class="text-white text-center fs-1 fw-bold m-4">Contacto</h3>
+      <p class="text-white text-center fw-bold">
+        Puedes contactarte a través de los siguientes medios:
+      </p>
+      <p class="text-white text-center">
+        <i class="fa-regular fa-envelope"></i> Jorge_Cerda_591@hotmail.com
+      </p>
+      <p class="text-white text-center">
+        <i class="fa-brands fa-whatsapp"></i> +56 9 3178 0169
+      </p>
+
       <div id="contenedorIcons" class="text-center">
         <button
           id="ghIcon"
@@ -887,6 +827,9 @@
           ></a>
         </button>
       </div>
+    </section>
+    <footer class="p-4">
+      <p class="text-center">© Todos los derechos reservados 2024.</p>
     </footer>
   </body>
 </html>

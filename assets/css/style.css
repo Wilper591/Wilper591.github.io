@@ -19,20 +19,15 @@
 nav {
   background-color: var(--azul-oscuro);
 }
-#tecnologias div {
-  height: 8rem;
-}
-svg {
-  width: 5rem;
-  &:hover {
-    width: 6rem;
-  }
-}
+
 .navbar {
+  background-color: var(--azul-oscuro);
+  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
-  z-index: 100;
-  height: 3.5rem;
+  top: 0;
+  z-index: 10000;
+  margin: 0;
 }
 .navbar-brand {
   color: var(--color-primary-white);
@@ -42,19 +37,33 @@ svg {
   }
 }
 .nav-link {
-  color: var(--azul-oscuro);
+  color: var(--color-primary-white);
+  background-color: var(--azul-oscuro);
   &:hover {
     color: var(--gris-oscuro);
     font-size: 1.3rem;
   }
 }
+/* Presentación */
 #sectionPresentacion {
   background-color: var(--blanco);
-  justify-content: center;
-  align-items: center;
   padding: 3rem;
   gap: 5rem;
 }
+#textPresentacion {
+  max-width: 40rem;
+  text-align: justify;
+}
+#tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#tecnologias div {
+  height: 8rem;
+}
+
 #fotoJorge {
   border-radius: 25% 50%;
   width: 25rem;
@@ -63,10 +72,13 @@ svg {
     box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
   }
 }
-#textPresentacion {
-  max-width: 40rem;
-  text-align: justify;
+svg {
+  width: 5rem;
+  &:hover {
+    width: 6rem;
+  }
 }
+/* Trabajos */
 #sectionTrabajos {
   background-color: var(--azul-oscuro);
   padding: 5rem;
@@ -74,7 +86,7 @@ svg {
 /* Estilos Card Trabajos */
 .card {
   width: 24rem;
-  height: 36rem;
+  height: 30rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -117,7 +129,7 @@ svg {
     text-decoration: none;
   }
   &:hover .card-title {
-    inset: auto auto 260px 30px;
+    inset: auto auto 270px 30px;
     transition: inset 0.3s ease-out;
   }
   &:hover .card-text,
@@ -137,75 +149,77 @@ svg {
     mask-image: linear-gradient(var(--color-primary-white) 40%, transparent);
   }
 }
-
 #tituloTrabajos {
   color: var(--blanco);
 }
+/* Formación */
 #sectionFormacion {
   background-color: var(--blanco);
 }
-#sectionFormacion h3 {
-  font-weight: bold;
+#tituloFormacion {
   text-align: center;
-  padding: 2rem 0 0.5rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem;
 }
-#sectionFormacion p {
-  text-align: justify;
+.contenedor-Form {
   padding: 1rem 0 1rem 0;
+  text-align: center;
+  margin: 1rem;
+}
+.contenedor-Form h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 #imgCertificado {
   border: 1px solid black;
   border-radius: 5%;
 }
+/* Contacto */
 #sectionContacto {
   background-color: var(--azul-oscuro);
   padding: 1rem;
+  height: 25rem;
 }
-#formularioContainer {
-  max-width: 40rem;
-  color: var(--color-primary-white);
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 1rem;
+#contenedorIcons {
+  display: flex;
+  flex-direction: column;
 }
-.modal-header,
-.modal-body {
-  color: var(--gris-oscuro);
-}
-footer {
-  background-color: var(--blanco);
-  
-  /* flex-direction: column; */
-  height: 6rem;
-}
-footer button i {
+#contenedorIcons button i {
   font-size: 3rem;
-  background-color: var(--azul-oscuro);
-  padding: 0.3rem;
+  padding: 0;
+  margin: 0.5rem;
   border-radius: 25%;
   &:hover {
     font-size: 3.5rem;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.7);
   }
 }
-
-@media (min-width: 996px) {
+/* Footer */
+footer {
+  background-color: var(--blanco);
+  height: 4rem;
+}
+/* MQ */
+@media (min-width: 768px) {
   .nav-link,
   .navbar-brand {
     color: var(--color-primary-white);
   }
   #sectionPresentacion {
+    padding: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   #sectionFormacion h3 {
     font-weight: bold;
-    text-align: justify;
+    text-align: center;
     padding: 2rem 0 1rem 0;
   }
   #sectionFormacion p {
-    text-align: justify;
+    text-align: center;
     padding: 1rem 0 0 0;
   }
   #contenedorCertificado {
@@ -214,9 +228,12 @@ footer button i {
   #imgCertificado {
     max-width: 35rem;
   }
-  footer {
+  #sectionContacto {
+    height: 20rem;
+  }
+  #contenedorIcons {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
 }
