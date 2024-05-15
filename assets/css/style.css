@@ -63,7 +63,7 @@ nav {
   text-align: center;
 }
 #tecnologias div {
-  height: 8rem;
+  height: auto;
 }
 #fotoJorge {
   border-radius: 25% 50%;
@@ -152,8 +152,12 @@ svg {
     mask-image: linear-gradient(var(--color-primary-white) 40%, transparent);
   }
 }
+/* Trabajos */
 #tituloTrabajos {
   color: var(--blanco);
+}
+.accordion {
+  width: auto;
 }
 /* Formación */
 #sectionFormacion {
@@ -222,6 +226,9 @@ footer {
     align-items: center;
     text-align: center;
   }
+  #tecnologias div {
+  height: 8rem;
+}
   svg {
     margin: 0;
   }
