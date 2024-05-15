@@ -47,10 +47,12 @@ nav {
 /* Presentación */
 #sectionPresentacion {
   background-color: var(--blanco);
-  padding: 3rem;
+  padding: 0;
+  margin-top: 2rem;
   gap: 5rem;
 }
 #textPresentacion {
+  padding: 3rem;
   max-width: 40rem;
   text-align: justify;
 }
@@ -198,6 +200,11 @@ footer {
   background-color: var(--blanco);
   height: 4rem;
 }
+@media (min-width: 576px) {
+  #fotoJorge {
+    width: 18rem;
+  }
+}
 /* MediaQuery */
 @media (min-width: 768px) {
   .nav-link,
@@ -205,11 +212,12 @@ footer {
     color: var(--color-primary-white);
   }
   #sectionPresentacion {
-    padding: 4rem;
+    padding: 2rem 0 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   svg {
     margin: 0;
