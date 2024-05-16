@@ -22,7 +22,6 @@ nav {
 
 .navbar {
   background-color: var(--azul-oscuro);
-  backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   top: 0;
@@ -39,6 +38,7 @@ nav {
 .nav-link {
   color: var(--color-primary-white);
   background-color: var(--azul-oscuro);
+  height: 3rem;
   &:hover {
     color: var(--gris-oscuro);
     font-size: 1.3rem;
