@@ -1,6 +1,6 @@
-# Bienvenido a mi repositorio, aqui podras encontrar mi portafolio digital.
-Ingresa al sitio web Aquí: <a href="https://wilper591.github.io">Curriculum Digital</a>
+# Bienvenido a mi repositorio, aquí podrás encontrar mi portafolio digital.
+Ingresa al sitio web aquí: <a href="https://wilper591.github.io">Portafolio</a>
 
-Dentro de este enlace podras encontrar una serie de los proyectos mas relevantes que he realizado en mi desarrollo como web developer en JavaScript.
+Dentro de este enlace podrás encontrar una serie de los proyectos más relevantes que he realizado en mi desarrollo como web developer en JavaScript.
 
-Espero sean de tu agrado.
+Espero que sean de tu agrado.
