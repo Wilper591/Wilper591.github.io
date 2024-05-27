@@ -185,7 +185,8 @@ svg {
   font-size: 1.5rem;
   font-weight: bold;
 }
-#imgCertificado {
+.imgCertificado {
+  margin: 2rem;
   border: 1px solid black;
   border-radius: 5%;
   box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
@@ -272,7 +273,7 @@ footer {
   #contenedorCertificado {
     text-align: center;
   }
-  #imgCertificado {
+  .imgCertificado {
     max-width: 35rem;
   }
   #sectionContacto {
