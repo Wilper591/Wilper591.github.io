@@ -189,7 +189,9 @@ svg {
   margin: 2rem;
   border: 1px solid black;
   border-radius: 5%;
-  box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
+  &:hover {
+    box-shadow: 0 15px 40px 10px rgba(0, 0, 0, 0.7);
+  }
 }
 /* Contacto */
 #sectionContacto {
