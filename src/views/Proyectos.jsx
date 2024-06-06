@@ -7,7 +7,7 @@ const Proyectos = () => {
   return (
     <>
       <NavBar />
-      <h1 className="text-4xl font-bold text-center my-8">Proyectos</h1>
+      <h1 className="text-4xl font-bold text-center lg:mt-20 my-10">Proyectos</h1>
 
       <div className="flex flex-col items-center md:flex-row md:justify-center">
         {/* Card: APV - MERN */}

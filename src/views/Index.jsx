@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col md:flex-row  md:items-center m-5 ">
+      <div className="flex flex-col md:flex-row md:items-center mx-6 min-h-screen">
         <div className="md:w-1/3 text-justify">
           <h1 className="font-bold text-4xl m-4 mb-6 text-center">
             Información Personal
@@ -44,11 +44,11 @@ const Index = () => {
           <div className="flex justify-center gap-3">
             <RiJavascriptFill
               title="JavaScript"
-              className="text-5xl fill-yellow-500 hover:text-6xl"
+              className="text-6xl fill-yellow-500"
             />
             <FaPhp
               title="PHP"
-              className="text-5xl fill-blue-600 hover:text-6xl"
+              className="text-6xl fill-blue-600"
             />
           </div>
 
@@ -56,27 +56,27 @@ const Index = () => {
           <div className="flex  justify-center gap-3">
             <FaHtml5
               title="HTML5"
-              className="text-5xl fill-orange-600 hover:text-6xl"
+              className="text-6xl fill-orange-600"
             />
             <FaCss3Alt
               title="CSS3"
-              className="text-5xl fill-blue-500 hover:text-6xl"
+              className="text-6xl fill-blue-500"
             />
             <FaBootstrap
               title="Bootstrap"
-              className="text-5xl fill-indigo-600 hover:text-6xl"
+              className="text-6xl fill-indigo-600"
             />
             <RiTailwindCssLine
               title="Tailwind"
-              className="text-5xl fill-blue-500 hover:text-6xl"
+              className="text-6xl fill-blue-500"
             />
             <FaVuejs
               title="Vue.js"
-              className="text-5xl fill-green-600 hover:text-6xl"
+              className="text-6xl fill-green-600"
             />
             <FaReact
               title="React"
-              className="text-5xl fill-blue-400 hover:text-6xl"
+              className="text-6xl fill-blue-400"
             />
           </div>
 
@@ -84,28 +84,28 @@ const Index = () => {
           <div className="flex justify-center gap-3">
             <FaNode
               title="Node.js"
-              className="text-5xl fill-green-600 hover:text-6xl"
+              className="text-6xl fill-green-600"
             />
             <FaNpm
               title="NPM"
-              className="text-5xl fill-red-500 hover:text-6xl"
+              className="text-6xl fill-red-500"
             />
-            <SiExpress title="Express.js" className="text-5xl hover:text-6xl" />
+            <SiExpress title="Express.js" className="text-6xl" />
           </div>
 
           <p className="font-bold text-2xl">Bases de Datos</p>
           <div className="flex justify-center gap-3">
             <SiMysql
               title="MySQL"
-              className="text-5xl fill-blue-500 hover:text-6xl"
+              className="text-6xl fill-blue-500"
             />
             <SiPostgresql
               title="PostgreSQL"
-              className="text-5xl fill-blue-600 hover:text-6xl"
+              className="text-6xl fill-blue-600"
             />
             <SiMongodb
               title="MongoDB"
-              className="text-5xl fill-green-600 hover:text-6xl"
+              className="text-6xl fill-green-600"
             />
           </div>
 
@@ -113,14 +113,14 @@ const Index = () => {
           <div className="flex justify-center gap-3">
             <FaGitAlt
               title="Git"
-              className="text-5xl fill-orange-700 hover:text-6xl"
+              className="text-6xl fill-orange-700"
             />
-            <FaGithub title="GitHub" className="text-5xl hover:text-6xl" />
+            <FaGithub title="GitHub" className="text-6xl" />
           </div>
         </div>
         <div>
           <img
-            className="rounded-full mt-10"
+            className="rounded-full my-10"
             src="./img/fotoperfil.png"
             alt="Jorge Cerda"
           />
