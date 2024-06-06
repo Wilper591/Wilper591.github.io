@@ -10,49 +10,6 @@ const Proyectos = () => {
       <h1 className="text-4xl font-bold text-center my-8">Proyectos</h1>
 
       <div className="flex flex-col items-center md:flex-row md:justify-center">
-        {/* Card: Pokedex Api */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
-          <img
-            className="w-full"
-            src="./img/pokedex-api.png"
-            alt="Web Pokedex API"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Pokedex API</div>
-            <p className="text-gray-700 text-base">
-              Aplicación basada en el mundo Pokemon. Consulta una API mediante
-              metodo Fetch implementando consultas async await.
-            </p>
-          </div>
-          <div className="text-center my-4">
-            <Link
-              target="_blank"
-              to="https://wilper591.github.io/PokedexApi/"
-              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
-            >
-              Ir a la WEB
-            </Link>
-            <Link
-              target="_blank"
-              to="https://github.com/Wilper591/PokedexApi"
-              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
-            >
-              Ir al Código
-            </Link>
-          </div>
-          <div className="px-6 pt-4 pb-2 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #HTML
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #CSS
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #JavaScript
-            </span>
-          </div>
-        </div>
-
         {/* Card: APV - MERN */}
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
           <img
@@ -64,7 +21,9 @@ const Proyectos = () => {
             <div className="font-bold text-xl mb-2">APV - MERN</div>
             <p className="text-gray-700 text-base">
               Administrador de Pacientes de Veterinaria. MongoDB, Express, React
-              y Node.js (MERN).
+              y Node.js (MERN). Permite el registro de usuarios con sesiones
+              independientes, acceso a información del perfil y un registro de
+              pacientes.
             </p>
           </div>
           <div className="text-center my-4">
@@ -138,9 +97,96 @@ const Proyectos = () => {
             </span>
           </div>
         </div>
+
+        {/* Card: Pokedex Api */}
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+          <img
+            className="w-full"
+            src="./img/pokedex-api.png"
+            alt="Web Pokedex API"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Pokedex API</div>
+            <p className="text-gray-700 text-base">
+              Aplicación basada en el mundo Pokemon. Consulta una API mediante
+              metodo Fetch implementando consultas async await.
+            </p>
+          </div>
+          <div className="text-center my-4">
+            <Link
+              target="_blank"
+              to="https://wilper591.github.io/PokedexApi/"
+              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
+            >
+              Ir a la WEB
+            </Link>
+            <Link
+              target="_blank"
+              to="https://github.com/Wilper591/PokedexApi"
+              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
+            >
+              Ir al Código
+            </Link>
+          </div>
+          <div className="px-6 pt-4 pb-2 text-center">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #HTML
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #CSS
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #JavaScript
+            </span>
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col items-center md:flex-row md:justify-center">
+        {/* Card: SkatePark */}
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+          <img
+            className="w-full"
+            src="./img/skateparkindex.png"
+            alt="Web SkatePark"
+          />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">SkatePark</div>
+            <p className="text-gray-700 text-base">
+              En esta app podras crear registros, hacer login pasando por varias
+              validaciones, tendras una vista admin también para aceptar o negar
+              skaters. El servidor esta hecho con Express.
+            </p>
+          </div>
+          <div className="text-center my-4">
+            <Link
+              target="_blank"
+              to="https://wilper591.github.io/SkateParkClient"
+              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
+            >
+              Ir a la WEB
+            </Link>
+            <Link
+              target="_blank"
+              to="https://github.com/Wilper591/SkateParkClient"
+              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
+            >
+              Ir al Código
+            </Link>
+          </div>
+          <div className="px-6 pt-4 pb-2 text-center">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #JavaScript
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #Node.js
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #Express.js
+            </span>
+          </div>
+        </div>
+
         {/* Card: Banco Solar */}
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
           <img
@@ -226,50 +272,6 @@ const Proyectos = () => {
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               #Json
-            </span>
-          </div>
-        </div>
-
-        {/* Card: SkatePark */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
-          <img
-            className="w-full"
-            src="./img/skateparkindex.png"
-            alt="Web SkatePark"
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">SkatePark</div>
-            <p className="text-gray-700 text-base">
-              En esta app podras crear registros, hacer login pasando por varias
-              validaciones, tendras una vista admin también para aceptar o negar
-              skaters. El servidor esta hecho con Express.
-            </p>
-          </div>
-          <div className="text-center my-4">
-            <Link
-              target="_blank"
-              to="https://wilper591.github.io/SkateParkClient"
-              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
-            >
-              Ir a la WEB
-            </Link>
-            <Link
-              target="_blank"
-              to="https://github.com/Wilper591/SkateParkClient"
-              className="rounded-lg mx-2 bg-gray-600 w-full p-3 text-white uppercase font-bold hover:bg-gray-800 cursor-pointer transition-colors"
-            >
-              Ir al Código
-            </Link>
-          </div>
-          <div className="px-6 pt-4 pb-2 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #JavaScript
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Node.js
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Express.js
             </span>
           </div>
         </div>
