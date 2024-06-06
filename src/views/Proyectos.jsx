@@ -7,11 +7,13 @@ const Proyectos = () => {
   return (
     <>
       <NavBar />
-      <h1 className="text-4xl font-bold text-center lg:mt-20 my-10">Proyectos</h1>
+      <h1 className="text-4xl font-bold text-center lg:mt-20 my-10">
+        Proyectos
+      </h1>
 
       <div className="flex flex-col items-center md:flex-row md:justify-center">
         {/* Card: APV - MERN */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/apv-mern.png"
@@ -56,7 +58,7 @@ const Proyectos = () => {
         </div>
 
         {/* Card: Agencia de Viajes */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/agenciadeviajes.png"
@@ -99,7 +101,7 @@ const Proyectos = () => {
         </div>
 
         {/* Card: Pokedex Api */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/pokedex-api.png"
@@ -144,7 +146,7 @@ const Proyectos = () => {
 
       <div className="flex flex-col items-center md:flex-row md:justify-center">
         {/* Card: SkatePark */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/skateparkindex.png"
@@ -188,7 +190,7 @@ const Proyectos = () => {
         </div>
 
         {/* Card: Banco Solar */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/bancoSolar.png"
@@ -233,7 +235,7 @@ const Proyectos = () => {
         </div>
 
         {/* Card: Roomates */}
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6">
+        <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
             src="./img/roommates.png"

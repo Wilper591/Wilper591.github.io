@@ -15,7 +15,7 @@ const NavBar = () => {
               to="/proyectos"
               className="font-bold uppercase text-white hover:text-gray-500"
             >
-              Trabajos
+              Proyectos
             </Link>
             <Link
               to="/estudios"
