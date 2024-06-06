@@ -34,7 +34,7 @@ const Contacto = () => {
         </div>
 
         <div className="w-full">
-          <form className="bg-white py-10 px-5 m-10 mx-72 shadow-md rounded-lg">
+          <form className="bg-white py-10 px-5 m-10 md:mx-32 lg:mx-72 shadow-md rounded-lg">
             <div className="mb-5">
               <label
                 htmlFor="nombre"
@@ -81,7 +81,7 @@ const Contacto = () => {
 
             <input
               type="submit"
-              className="bg-gray-600 w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md cursor-pointer transition-colors"
+              className="bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md cursor-pointer transition-colors"
             />
           </form>
         </div>
