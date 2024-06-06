@@ -20,10 +20,9 @@ const Contacto = () => {
   return (
     <>
       <NavBar />
-
-      <div className="flex flex-col w-full lg:flex-row items-center h-svh">
-        <div className="px-8 md:ps-16 m-12 w-full md text-justify">
-          <h1 className="text-justify font-bold my-8 text-4xl">Contacto</h1>
+      <div className="flex flex-col lg:flex-row gap-10 md:gap-0 mt-12 h-screen">
+        <div className="w-full md:w-5/6 lg:w-1/3 px-8 mx-12 lg:px-0 md:ps-16 text-justify">
+          <h1 className="text-justify font-bold text-4xl">Contacto</h1>
           <p className="text-xl my-5 ">
             <i className="fa-regular fa-envelope font-bold"></i>{" "}
             Jorge_Cerda_591@hotmail.com
@@ -42,8 +41,7 @@ const Contacto = () => {
           </p>
           <p className="text-xl my-5">
             <Link target="_blank" to="https://github.com/Wilper591">
-              <i className="fa-brands fa-square-github"></i>
-              GitHub
+              <i className="fa-brands fa-square-github"></i> GitHub
             </Link>
           </p>
           <p className="text-xl my-5">
@@ -51,14 +49,14 @@ const Contacto = () => {
               target="_blank"
               to="https://www.linkedin.com/in/jorgecerda591/"
             >
-              <i className="fa-brands fa-linkedin"></i>LinkedIn
+              <i className="fa-brands fa-linkedin"></i> LinkedIn
             </Link>
           </p>
         </div>
 
-        <div className="w-5/6 md:w-5/6 mx-2">
+        <div className="w-full md:w-5/6 lg:w-2/3 px-8">
           <form
-            className="bg-white md:m-10 py-10 px-5 shadow-md rounded-lg"
+            className="bg-white py-10 px-5 shadow-md rounded-lg"
             onSubmit={handleSubmit}
           >
             {msg && <Alerta alerta={alerta} />}
