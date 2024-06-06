@@ -22,8 +22,8 @@ const Contacto = () => {
       <NavBar />
       <h1 className="text-center font-bold my-8 text-4xl">Contacto</h1>
 
-      <div className="flex flex-col w-full md:flex-row items-center h-svh">
-        <div className="align-middle w-full text-justify  m-10 md:mx-10">
+      <div className="flex flex-col m-10 w-full md:flex-row items-center justify-center h-svh">
+        <div className="align-middle w-full text-justify">
           <p className="font-bold text-2xl">
             Puedes contactarte a través de los siguientes medios:
           </p>
@@ -59,11 +59,12 @@ const Contacto = () => {
           </p>
         </div>
 
-        <div className="w-full">
+        <div className="w-5/6 md:w-full">
           <form
-            className="bg-white py-10 px-5 m-10 shadow-md rounded-lg"
+            className="bg-white md:m-10 md:w-5/6 py-10 px-5 shadow-md rounded-lg"
             onSubmit={handleSubmit}
           >
+            <p className="text-lg font-black mb-3">...O a través del siguiente formulario</p>
             {msg && <Alerta alerta={alerta} />}
             <div className="mb-5">
               <label
