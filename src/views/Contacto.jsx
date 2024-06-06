@@ -22,8 +22,8 @@ const Contacto = () => {
       <NavBar />
       <h1 className="text-center font-bold my-8 text-4xl">Contacto</h1>
 
-      <div className="flex flex-col m-10 w-full md:flex-row items-center justify-center h-svh">
-        <div className="align-middle w-full text-justify">
+      <div className="flex flex-col w-full md:flex-row items-center justify-center h-svh">
+        <div className="align-middle m-10 w-full text-justify">
           <p className="font-bold text-2xl">
             Puedes contactarte a través de los siguientes medios:
           </p>
