@@ -21,7 +21,7 @@ const Contacto = () => {
     <>
       <NavBar />
       <div className="flex flex-col lg:flex-row gap-10 md:gap-0 mt-12 h-screen">
-        <div className="w-full md:w-5/6 lg:w-1/3 px-8 mx-12 lg:px-0 md:ps-16 text-justify">
+        <div className="w-full md:w-5/6 lg:w-1/3 px-8 lg:px-0 md:ps-16 md:mx-12 lg:ms-16 lg:me-0 text-justify">
           <h1 className="text-justify font-bold text-4xl">Contacto</h1>
           <p className="text-xl my-5 ">
             <i className="fa-regular fa-envelope font-bold"></i>{" "}
@@ -54,7 +54,7 @@ const Contacto = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-5/6 lg:w-2/3 px-8">
+        <div className="w-full md:w-5/6 lg:w-2/3 px-8 lg:px-0 lg:pe-8 md:mx-12 lg:mx-0">
           <form
             className="bg-white py-10 px-5 shadow-md rounded-lg"
             onSubmit={handleSubmit}
