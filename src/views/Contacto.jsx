@@ -1,20 +1,40 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import Alerta from "../components/Alerta";
 
 const Contacto = () => {
+  const [alerta, setAlerta] = useState({});
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setAlerta({ msg: "Proximamente...", error: true });
+    setTimeout(() => {
+      setAlerta({});
+    }, 3000);
+  };
+
+  const { msg } = alerta;
+
   return (
     <>
       <NavBar />
       <h1 className="text-center font-bold my-8 text-4xl">Contacto</h1>
-      
-      <div className="flex flex-col w-full">
-        <div className="align-middle w-full text-center">
+
+      <div className="flex flex-col w-full md:flex-row items-center h-svh">
+        <div className="align-middle w-full text-justify  m-10 md:mx-10">
           <p className="font-bold text-2xl">
             Puedes contactarte a través de los siguientes medios:
           </p>
-          <p className="text-xl my-5">
+          <p className="text-xl my-5 ">
+            <i className="fa-regular fa-envelope font-bold"></i>{" "}
+            Jorge_Cerda_591@hotmail.com
+          </p>
+          <p className="text-xl my-5 ">
+            <i className="fa-brands fa-square-whatsapp"></i> +56 9 3178 0169
+          </p>
+          <p className="text-xl mt-7 mb-5">
             <Link
               target="_blank"
               to="https://drive.google.com/file/d/1Tp8aCNioDwfbT7H-gQs7Q6-zZu5pAvML/view?usp=sharing"
@@ -23,18 +43,28 @@ const Contacto = () => {
               Curriculum Aquí
             </Link>
           </p>
-          <p className="text-xl my-5 ">
-            <i className="fa-regular fa-envelope font-bold"></i>{" "}
-            Jorge_Cerda_591@hotmail.com
+          <p className="text-xl my-5">
+            <Link target="_blank" to="https://github.com/Wilper591">
+              <i className="fa-brands fa-square-github"></i>
+              GitHub
+            </Link>
           </p>
-          <p className="text-xl my-5 ">
-            <i className="fa-brands fa-whatsapp font-bold text-green-600"></i>{" "}
-            +56 9 3178 0169
+          <p className="text-xl my-5">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/jorgecerda591/"
+            >
+              <i className="fa-brands fa-linkedin"></i>LinkedIn
+            </Link>
           </p>
         </div>
 
         <div className="w-full">
-          <form className="bg-white py-10 px-5 m-10 md:mx-32 lg:mx-72 shadow-md rounded-lg">
+          <form
+            className="bg-white py-10 px-5 m-10 shadow-md rounded-lg"
+            onSubmit={handleSubmit}
+          >
+            {msg && <Alerta alerta={alerta} />}
             <div className="mb-5">
               <label
                 htmlFor="nombre"
