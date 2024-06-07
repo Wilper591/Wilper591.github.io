@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <>
       <header className="mb-52 md:mb-24 lg:mb-0">
-        <nav className="flex flex-col md:flex-row md:justify-between px-10 bg-sky-950 py-5 gap-5 w-full fixed top-0">
+        <nav className="flex flex-col md:flex-row md:justify-between px-10 from-sky-950 to-sky-700 bg-gradient-to-r py-5 gap-5 w-full fixed top-0">
           <div className="text-xl text-center">
             <Link className="font-bold text-white hover:text-gray-500" to="/">
               Jorge Cerda

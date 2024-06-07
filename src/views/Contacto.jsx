@@ -21,7 +21,7 @@ const Contacto = () => {
     <>
       <NavBar />
       <div className="h-screen mt-60 md:mt-28 lg:mt-36">
-        <div className="rounded-lg shadow-xl bg-sky-800 mx-6 flex flex-col lg:flex-row gap-10 md:gap-0 ">
+        <div className="rounded-lg shadow-xl from-sky-950 to-sky-700 bg-gradient-to-l mx-6 flex flex-col lg:flex-row gap-10 md:gap-0 ">
           <div className="w-full md:w-5/6 lg:w-1/3 px-6 pt-3 lg:ms-16 text-justify text-white">
             <h1 className="text-justify font-bold text-lg md:text-4xl lg:mt-4 lg:mb-16">
               Contacto
@@ -33,7 +33,7 @@ const Contacto = () => {
             <p className="text-md md:text-xl my-5 ">
               <i className="fa-brands fa-square-whatsapp"></i> +56 9 3178 0169
             </p>
-            <p className="text-md md:text-xl my-5">
+            <p className="text-md md:text-xl my-5 hover:text-gray-500">
               <Link
                 target="_blank"
                 to="https://drive.google.com/file/d/1Tp8aCNioDwfbT7H-gQs7Q6-zZu5pAvML/view?usp=sharing"
@@ -42,12 +42,12 @@ const Contacto = () => {
                 Curriculum Aquí
               </Link>
             </p>
-            <p className="text-md md:text-xl my-5">
+            <p className="text-md md:text-xl my-5 hover:text-gray-500">
               <Link target="_blank" to="https://github.com/Wilper591">
                 <i className="fa-brands fa-square-github"></i> GitHub
               </Link>
             </p>
-            <p className="text-md md:text-xl my-5">
+            <p className="text-md md:text-xl my-5 hover:text-gray-500">
               <Link
                 target="_blank"
                 to="https://www.linkedin.com/in/jorgecerda591/"

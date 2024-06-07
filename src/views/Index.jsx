@@ -44,7 +44,7 @@ const Index = () => {
           <div className="flex justify-center gap-3">
             <RiJavascriptFill
               title="JavaScript"
-              className="text-6xl fill-yellow-500"
+              className="text-6xl fill-amber-400"
             />
             <FaPhp
               title="PHP"
