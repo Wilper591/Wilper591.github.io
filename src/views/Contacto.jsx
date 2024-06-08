@@ -25,7 +25,7 @@ const Contacto = () => {
       setAlerta({ msg: "El mensaje es muy corto", error: true });
       return;
     }
-   console.log("test2");
+   
     try {
       setAlerta({ msg: "Enviando Email...", error: true });
       setCursor("cursor-wait");
