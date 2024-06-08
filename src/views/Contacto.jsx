@@ -3,16 +3,42 @@ import { useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Alerta from "../components/Alerta";
+import axios from "axios";
 
 const Contacto = () => {
   const [alerta, setAlerta] = useState({});
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setAlerta({ msg: "Proximamente...", error: true });
-    setTimeout(() => {
-      setAlerta({});
-    }, 3000);
+
+    if ([nombre, email, mensaje].includes("")) {
+      setAlerta({ msg: "Todos los campos son obligatorios", error: true });
+      return;
+    }
+
+    if (mensaje.length < 10) {
+      setAlerta({ msg: "El mensaje es muy corto", error: true });
+      return;
+    }
+    try {
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/sendEmail`,
+        {
+          email,
+          nombre,
+          mensaje,
+        }
+      );
+      setAlerta({ msg: data.msg , error: false });
+      setTimeout(() => {
+        setAlerta({});
+      }, 3000);
+    } catch (error) {
+      setAlerta({ msg: error.response.data.msg, error: true });
+    }
   };
 
   const { msg } = alerta;
@@ -73,6 +99,8 @@ const Contacto = () => {
                   id="nombre"
                   placeholder="Tu nombre"
                   className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  value={nombre}
+                  onChange={(e) => setNombre(e.target.value)}
                 />
               </div>
 
@@ -88,6 +116,8 @@ const Contacto = () => {
                   type="email"
                   placeholder="Tu Email"
                   className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -102,12 +132,15 @@ const Contacto = () => {
                   id="mensaje"
                   placeholder="Escribe aquí tu mensaje"
                   className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  value={mensaje}
+                  onChange={(e) => setMensaje(e.target.value)}
                 />
               </div>
 
               <input
                 type="submit"
                 className="bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md cursor-pointer transition-colors"
+                value="Enviar Email"
               />
             </form>
           </div>
