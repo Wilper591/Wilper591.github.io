@@ -11,7 +11,7 @@ const Contacto = () => {
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [cursor, setCursor] = useState("cursor-pointer");
-  const [disabled, setDisabled] = useState(false)
+  const [disabled, setDisabled] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ const Contacto = () => {
       setAlerta({ msg: "El mensaje es muy corto", error: true });
       return;
     }
-   
+
     try {
       setAlerta({ msg: "Enviando Email...", error: true });
       setCursor("cursor-wait");
@@ -40,6 +40,9 @@ const Contacto = () => {
       );
       setCursor("cursor-pointer");
       setDisabled(false);
+      setNombre("");
+      setEmail("");
+      setMensaje("");
       setAlerta({ msg: data.msg, error: false });
       setTimeout(() => {
         setAlerta({});
