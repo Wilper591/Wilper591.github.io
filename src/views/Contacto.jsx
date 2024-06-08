@@ -24,6 +24,7 @@ const Contacto = () => {
       return;
     }
     try {
+      setAlerta({ msg: "Enviando Email...", error: true });
       const { data } = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/sendEmail`,
         {
@@ -32,7 +33,7 @@ const Contacto = () => {
           mensaje,
         }
       );
-      setAlerta({ msg: data.msg , error: false });
+      setAlerta({ msg: data.msg, error: false });
       setTimeout(() => {
         setAlerta({});
       }, 3000);
