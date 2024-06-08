@@ -10,6 +10,8 @@ const Contacto = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [cursor, setCursor] = useState("cursor-pointer");
+  const [disabled, setDisabled] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,8 +25,11 @@ const Contacto = () => {
       setAlerta({ msg: "El mensaje es muy corto", error: true });
       return;
     }
+   console.log("test2");
     try {
       setAlerta({ msg: "Enviando Email...", error: true });
+      setCursor("cursor-wait");
+      setDisabled(true);
       const { data } = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/sendEmail`,
         {
@@ -33,6 +38,8 @@ const Contacto = () => {
           mensaje,
         }
       );
+      setCursor("cursor-pointer");
+      setDisabled(false);
       setAlerta({ msg: data.msg, error: false });
       setTimeout(() => {
         setAlerta({});
@@ -140,8 +147,9 @@ const Contacto = () => {
 
               <input
                 type="submit"
-                className="bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md cursor-pointer transition-colors"
+                className={`bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} ${disabled} transition-colors`}
                 value="Enviar Email"
+                disabled={disabled}
               />
             </form>
           </div>
