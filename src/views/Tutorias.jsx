@@ -2,8 +2,8 @@ import { useState } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Alerta from "../components/Alerta";
-import axios from "axios";
 import ListadoReseñas from "../components/ListadoReseñas";
+import axios from "axios";
 
 const Tutorias = () => {
   const [alerta, setAlerta] = useState({});
