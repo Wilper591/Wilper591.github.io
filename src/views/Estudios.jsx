@@ -12,7 +12,7 @@ const Estudios = () => {
       </h1>
 
       <div className="flex flex-col justify-center text-center md:flex-row gap-5">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 bg-gray-300 p-2 rounded-md m-5">
           <h2 className="text-2xl">
             <span className="text-3xl font-bold">
               BootCamp Talento Digital:
@@ -25,7 +25,27 @@ const Estudios = () => {
           </p>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 bg-gray-300 p-2 rounded-md m-5">
+          <h2 className="text-2xl">
+            <span className="text-3xl font-bold">Desafio Latam:</span> Charla UX
+            101: Introducción al UX/UI sin ser diseñador
+          </h2>
+          <Link
+            to="https://cursos.desafiolatam.com/certificates/vudetmdnmq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex justify-center m-4">
+              <img
+                className="max-h-80"
+                src="./img/certificado-intro-ux-ui-sin-ser-disenador.png"
+                alt="Certificado Ciberseguridad"
+              />
+            </div>
+          </Link>
+        </div>
+
+        <div className="md:w-1/2 bg-gray-300 p-2 rounded-md m-5">
           <h2 className="text-2xl">
             <span className="text-3xl font-bold">Desafio Latam:</span> Charla
             Ciberseguridad para Principiantes
@@ -47,7 +67,7 @@ const Estudios = () => {
       </div>
 
       <div className="flex flex-col justify-center text-center md:flex-row gap-5">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 bg-gray-300 p-2 rounded-md m-5">
           <h2 className="text-2xl">
             <span className="text-3xl font-bold">UDEMY:</span> JavaScript
             Moderno Guía Definitiva Construye +20 Proyectos
@@ -67,7 +87,7 @@ const Estudios = () => {
           </Link>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 bg-gray-300 p-2 rounded-md m-5">
           <h2 className="text-2xl">
             <span className="text-3xl font-bold">UDEMY:</span> Desarrollo Web
             Completo con HTML5, CSS3, JS AJAX, PHP y MySQL.

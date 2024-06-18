@@ -106,7 +106,7 @@ const Tutorias = () => {
 
               <input
                 type="submit"
-                className={`bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-center text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} transition-colors`}
+                className={`bg-gray-600 w-full md:w-1/2 p-3 text-center text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} transition-colors`}
                 value="Enviar Reseña"
                 disabled={disabled}
               />

@@ -13,7 +13,7 @@ const ReviewsProvider = ({ children }) => {
         const { data } = await axios(
           `${import.meta.env.VITE_BACKEND_URL}/api/getReviews`
         );
-        setReviews(data.results);
+        setReviews(data.resultado);
       } catch (error) {
         console.log(error);
       }
