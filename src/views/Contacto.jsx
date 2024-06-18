@@ -57,7 +57,7 @@ const Contacto = () => {
   return (
     <>
       <NavBar />
-      <div className="h-screen mt-60 md:mt-28 lg:mt-36">
+      <div className="h-screen mt-64 md:mt-28 lg:mt-36">
         <div className="rounded-lg shadow-xl from-sky-950 to-sky-700 bg-gradient-to-l mx-6 flex flex-col lg:flex-row gap-10 md:gap-0 ">
           <div className="w-full md:w-5/6 lg:w-1/3 px-6 pt-3 lg:ms-16 text-justify text-white">
             <h1 className="text-justify font-bold text-lg md:text-4xl lg:mt-4 lg:mb-16">

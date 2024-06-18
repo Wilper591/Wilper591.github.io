@@ -45,7 +45,7 @@ const Tutorias = () => {
       setAlerta({ msg: data.msg, error: false });
       setTimeout(() => {
         window.location.reload();
-      }, 3000);
+      }, 2000);
     } catch (error) {
       setAlerta({ msg: error.response.data.msg, error: true });
     }
@@ -58,13 +58,13 @@ const Tutorias = () => {
       <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10">
         Reseñas
       </h1>
-      <div className="flex flex-wrap items-center justify-center">
+      <div className="flex flex-wrap items-center justify-center mx-10">
         <ListadoReseñas />
       </div>
 
-      <div className="flex flex-col items-center min-h-screen">
-        <div className="px-10 m-10 rounded-md w-1/2">
-          <form className="bg-white p-5" onSubmit={handleSubmit}>
+      <div className="flex flex-col items-center">
+        <div className="px-10 m-10 w-full md:w-1/2">
+          <form className="bg-white rounded-lg p-5" onSubmit={handleSubmit}>
             {msg && <Alerta alerta={alerta} />}
 
             <div className="mb-5">
@@ -102,7 +102,7 @@ const Tutorias = () => {
 
             <input
               type="submit"
-              className={`bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} transition-colors`}
+              className={`bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-center text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} transition-colors`}
               value="Enviar Reseña"
               disabled={disabled}
             />
