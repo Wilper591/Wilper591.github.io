@@ -22,6 +22,10 @@ const Tutorias = () => {
       setAlerta({ msg: "El mensaje es muy corto", error: true });
       return;
     }
+    if (mensaje.length > 255) {
+      setAlerta({ msg: "El mensaje solo puede contener 255 carácteres", error: true });
+      return;
+    }
 
     try {
       setAlerta({ msg: "Enviando Reseña...", error: true });
