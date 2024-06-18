@@ -24,6 +24,12 @@ const NavBar = () => {
               Estudios
             </Link>
             <Link
+              to="/tutorias"
+              className="font-bold uppercase text-white hover:text-gray-500"
+            >
+              Tutorias
+            </Link>
+            <Link
               to="/contacto"
               className="font-bold uppercase text-white hover:text-gray-500"
             >

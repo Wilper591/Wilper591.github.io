@@ -4,6 +4,7 @@ import Index from "./views/Index";
 import Proyectos from "./views/Proyectos";
 import Estudios from "./views/Estudios";
 import Contacto from "./views/Contacto";
+import Tutorias from "./views/Tutorias";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index path="/" element={<Index />} />
         <Route path="proyectos" element={<Proyectos />} />
         <Route path="estudios" element={<Estudios />} />
+        <Route path="tutorias" element={<Tutorias />} />
         <Route path="contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
