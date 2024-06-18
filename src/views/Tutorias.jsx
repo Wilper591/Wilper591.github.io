@@ -35,7 +35,7 @@ const Tutorias = () => {
       setCursor("cursor-wait");
       setDisabled(true);
       const { data } = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/sendReview`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/sendReview`,
         {
           nombre,
           mensaje,

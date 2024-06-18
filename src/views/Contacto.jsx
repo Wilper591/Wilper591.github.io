@@ -31,7 +31,7 @@ const Contacto = () => {
       setCursor("cursor-wait");
       setDisabled(true);
       const { data } = await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/sendEmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/sendEmail`,
         {
           email,
           nombre,
