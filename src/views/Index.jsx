@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col md:flex-row md:items-center mx-6 min-h-screen">
+      <div className="flex flex-col md:flex-row items-center gap-3 mx-6 mt-60 md:mt-5 min-h-screen">
         <div className="md:w-1/3 text-justify">
           <h1 className="font-bold text-4xl m-4 mb-6 text-center">
             Información Personal
@@ -52,7 +52,7 @@ const Index = () => {
           </div>
 
           <p className="font-bold text-2xl">Tecnologías FrontEnd</p>
-          <div className="flex  justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             <FaHtml5 title="HTML5" className="text-6xl fill-orange-600" />
             <FaCss3Alt title="CSS3" className="text-6xl fill-blue-500" />
             <FaBootstrap
