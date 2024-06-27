@@ -7,7 +7,7 @@ const Estudios = () => {
   return (
     <>
       <NavBar />
-      <h1 className="font-bold text-4xl text-center md:mt-12 lg:mt-28 mt-60 mb-10">
+      <h1 className="font-bold text-4xl text-center md:mt-12 lg:mt-28 mt-60 mb-10 text-white">
         Formación en Desarrollo Web
       </h1>
 

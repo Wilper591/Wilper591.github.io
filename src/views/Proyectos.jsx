@@ -7,7 +7,7 @@ const Proyectos = () => {
   return (
     <>
       <NavBar />
-      <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10">
+      <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10 text-white">
         Proyectos
       </h1>
 

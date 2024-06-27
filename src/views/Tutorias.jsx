@@ -59,7 +59,7 @@ const Tutorias = () => {
     <>
       <NavBar />
       <div className="min-h-screen">
-        <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10">
+        <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10 text-white">
           Reseñas
         </h1>
         <div className="flex flex-wrap items-center justify-center mx-10">

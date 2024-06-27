@@ -13,7 +13,7 @@ const ListadoReseñas = () => {
             ))}
         </>
       ) : (
-        <h2 className="font-bold text-2xl text-center">No hay reseñas, por favor deja tu comentario.</h2>
+        <h2 className="font-bold text-2xl text-center text-white">No hay reseñas, por favor deja tu comentario.</h2>
       )}
     </>
   );

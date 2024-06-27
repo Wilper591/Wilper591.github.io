@@ -21,7 +21,7 @@ const Index = () => {
     <>
       <NavBar />
       <div className="flex flex-col md:flex-row items-center gap-3 mx-6 mt-60 md:mt-5 min-h-screen">
-        <div className="md:w-1/3 text-justify">
+        <div className="md:w-1/3 text-justify text-white">
           <h1 className="font-bold text-4xl m-4 mb-6 text-center">
             Información Personal
           </h1>
@@ -39,7 +39,7 @@ const Index = () => {
             el campo del desarrollo web, especialmente en el ámbito del BackEnd!
           </p>
         </div>
-        <div className="md:w-1/3 flex flex-col text-center gap-7">
+        <div className="md:w-1/3 flex flex-col text-center gap-7 text-white">
           <p className="font-bold text-2xl w-full mt-6">
             Lenguaje de Programación
           </p>
