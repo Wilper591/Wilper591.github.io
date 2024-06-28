@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col md:flex-row items-center gap-3 mx-6 md:mt-5 min-h-screen">
+      <div className="flex flex-col md:flex-row items-center gap-3 mt-28 mx-6 md:mt-5 min-h-screen">
         <div className="md:w-1/3 text-justify text-white">
           <h1 className="font-bold text-4xl m-4 mb-8 text-center">
             Información Personal

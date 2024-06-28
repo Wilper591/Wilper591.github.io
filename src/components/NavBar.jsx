@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [mostrar, setMostrar] = useState(false);
-  const [marginTop, setMarginTop] = useState("24");
+  const [marginTop, setMarginTop] = useState(24);
 
   const handleClick = () => {
     setMostrar(!mostrar);
@@ -11,17 +11,17 @@ const NavBar = () => {
 
   useEffect(() => {
     if (mostrar) {
-      setMarginTop("72");
+      setMarginTop(72);
     } else {
       setTimeout(() => {
-        setMarginTop("24");
+        setMarginTop(24);
       }, 500);
     }
   }, [mostrar]);
 
   return (
     <>
-      <header className={`transition-all duration-500 mt-${marginTop}`}>
+      <header className={`transition-all md:transition-none duration-500 md:mt-12 mt-${marginTop}`}>
         <nav className="flex flex-col md:flex-row md:justify-between px-10 from-sky-950 to-sky-700 bg-gradient-to-r pt-5 md:py-5 w-full fixed top-0">
           <div className="flex justify-between items-center">
             <div className="text-xl text-center">
