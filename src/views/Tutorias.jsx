@@ -59,9 +59,23 @@ const Tutorias = () => {
     <>
       <NavBar />
       <div className="min-h-screen">
-        <h1 className="text-4xl font-bold text-center md:mt-12 lg:mt-20 mt-60 mb-10 text-white">
+        <div className="flex flex-col items-center">
+          <h1 className="text-4xl font-bold text-center mt-12 lg:mt-20  mb-10 text-white">
+            Tutorias
+          </h1>
+          <p className="md:w-1/2 text-xl text-justify p-10 bg-gray-300 rounded-md m-5">
+            En esta sección, encontrarás reseñas auténticas de estudiantes que
+            han tomado mis tutorías en desarrollo web con JavaScript. Aunque no
+            soy profesor de profesión, soy un apasionado estudiante y
+            practicante de programación. Entiendo los desafíos que pueden surgir
+            en el aprendizaje de la programación web y estoy aquí para ayudarte
+            a superarlos. Si buscas un tutor que te guíe en los aspectos básicos
+            y avanzados de la programación web, no dudes en contactarme.
+          </p>
+        </div>
+        <h2 className="text-3xl font-bold text-center mb-10 text-white">
           Reseñas
-        </h1>
+        </h2>
         <div className="flex flex-wrap items-center justify-center mx-10">
           <ListadoReseñas />
         </div>
