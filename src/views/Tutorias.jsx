@@ -63,7 +63,7 @@ const Tutorias = () => {
           <h1 className="text-4xl font-bold text-center mt-12 lg:mt-20  mb-10 text-white">
             Tutorias
           </h1>
-          <p className="md:w-1/2 text-xl text-justify p-10 bg-gray-300 rounded-md m-5">
+          <p className="md:w-1/2 text-lg font-bold text-justify p-10 bg-gray-300 rounded-md m-5">
             En esta sección, encontrarás reseñas auténticas de estudiantes que
             han tomado mis tutorías en desarrollo web con JavaScript. Aunque no
             soy profesor de profesión, soy un apasionado estudiante y
