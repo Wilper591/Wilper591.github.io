@@ -58,9 +58,9 @@ const Tutorias = () => {
   return (
     <>
       <NavBar />
-      <div className="min-h-screen mt-20 md:mt-0">
+      <div className="min-h-screen mt-28 md:mt-0">
         <div className="flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-center mt-12 lg:mt-20 mb-10 text-white">
+          <h1 className="text-4xl font-bold text-center lg:mt-20 mb-10 text-white">
             Tutorias
           </h1>
           <p className="md:w-1/2 text-lg font-bold text-justify p-10 bg-gray-300 rounded-md m-5">
