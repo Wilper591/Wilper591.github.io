@@ -27,7 +27,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/aprobacion-final-td8-g66-m10-desarrollo-de-aplicaciones-full-stack-javascript-trainee-v2-0-desarrollo-de-empleabilidad-en-la-industria-digital-ele03079206.png"
+                src="./img/certificado-fullstack-javascript.png"
                 alt="Certificado Desarrollador Full Stack JavaScript Trainee"
               />
             </div>
@@ -48,7 +48,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/Certificado-JS-Moderno.jpg"
+                src="./img/Certificado-JS-Moderno.webp"
                 alt="Certificado Ciberseguridad"
               />
             </div>
@@ -68,7 +68,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/Certificado.jpg"
+                src="./img/Certificado.webp"
                 alt="Certificado Curso Desarrollo Web"
               />
             </div>
@@ -90,7 +90,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/certificado-intro-ux-ui-sin-ser-disenador.png"
+                src="./img/certificado-intro-ux-ui-sin-ser-disenador.webp"
                 alt="Certificado Ciberseguridad"
               />
             </div>
@@ -110,7 +110,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/certificado-ciberseguridad-principiantes.png"
+                src="./img/certificado-ciberseguridad-principiantes.webp"
                 alt="Certificado Ciberseguridad"
               />
             </div>

@@ -93,7 +93,7 @@ const Index = () => {
         <div>
           <img
             className="rounded-full my-10"
-            src="./img/fotoperfil.png"
+            src="./img/fotoperfil.webp"
             alt="Jorge Cerda"
           />
         </div>

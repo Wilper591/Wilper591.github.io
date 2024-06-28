@@ -16,7 +16,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/apv-mern.png"
+            src="./img/apv-mern.webp"
             alt="Web Administrador de Pacientes de Veterinaria"
           />
           <div className="px-6 py-4">
@@ -61,7 +61,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/agenciadeviajes.png"
+            src="./img/agenciadeviajes.webp"
             alt="Web Agencia de Viajes"
           />
           <div className="px-6 py-4">
@@ -104,7 +104,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/pokedex-api.png"
+            src="./img/pokedex-api.webp"
             alt="Web Pokedex API"
           />
           <div className="px-6 py-4">
@@ -149,7 +149,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/skateparkindex.png"
+            src="./img/skateparkindex.webp"
             alt="Web SkatePark"
           />
           <div className="px-6 py-4">
@@ -193,7 +193,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/bancoSolar.png"
+            src="./img/bancoSolar.webp"
             alt="Web Banco Solar"
           />
           <div className="px-6 py-4">
@@ -238,7 +238,7 @@ const Proyectos = () => {
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg m-6 bg-slate-300">
           <img
             className="w-full"
-            src="./img/roommates.png"
+            src="./img/roommates.webp"
             alt="Web Administrador de Pacientes de Veterinaria"
           />
           <div className="px-6 py-4">
