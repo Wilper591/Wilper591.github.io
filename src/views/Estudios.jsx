@@ -27,7 +27,7 @@ const Estudios = () => {
             <div className="flex justify-center m-4">
               <img
                 className="max-h-80"
-                src="./img/certificado-fullstack-javascript.png"
+                src="./img/certificado-fullstack-javascript.webp"
                 alt="Certificado Desarrollador Full Stack JavaScript Trainee"
               />
             </div>
