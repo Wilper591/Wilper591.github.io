@@ -76,7 +76,7 @@ const Tutorias = () => {
         <h2 className="text-3xl font-bold text-center mb-10 text-white">
           Reseñas
         </h2>
-        <div className="flex flex-wrap items-center justify-center mx-10">
+        <div className="flex flex-col items-center justify-center mx-10">
           <ListadoReseñas />
         </div>
 
