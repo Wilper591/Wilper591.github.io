@@ -4,7 +4,7 @@ const Reseña = ({ review }) => {
     <>
       <div
         id={id}
-        className="w-full md:w-1/2 flex flex-col items-start justify-center p-2 m-2 bg-gray-300 rounded-md shadow-md"
+        className="w-full lg:w-1/2 flex flex-col items-start justify-center p-2 m-2 bg-gray-300 rounded-md shadow-md"
       >
         <p className="text-xl font-bold text-gray-500 p-3">
           Nombre: <span className="text-2xl text-black">{name}</span>
