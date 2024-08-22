@@ -19,19 +19,34 @@ const Estudios = () => {
             </span>{" "}
             Desarrollador FullStack JavaScript Trainee
           </h2>
-          <Link
-            to="https://reinventate.desafiolatam.com/v/zSALWppSDHGwbxyKUeqwpWy3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex justify-center m-4">
-              <img
-                className="max-h-80"
-                src="./img/certificado-fullstack-javascript.webp"
-                alt="Certificado Desarrollador Full Stack JavaScript Trainee"
-              />
-            </div>
-          </Link>
+          <div className="md:flex">
+            <Link
+              to="https://reinventate.desafiolatam.com/v/zSALWppSDHGwbxyKUeqwpWy3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex justify-center m-4">
+                <img
+                  className="max-h-80 w-full rounded-md"
+                  src="./img/certificado-fullstack-javascript.webp"
+                  alt="Certificado Desarrollador Full Stack JavaScript Trainee"
+                />
+              </div>
+            </Link>
+            <Link
+              to="https://www.acreditta.com/credential/cb8d48e7-b165-48f5-bee5-ea08eee6d044?utm_source=copy&resource_type=badge&resource=cb8d48e7-b165-48f5-bee5-ea08eee6d044"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex justify-center m-4">
+                <img
+                  className="max-h-80 rounded-md"
+                  src="./img/Insignia BOOTCAMP DESARROLLO DE APLICACIONES FULL STACK JAVASCRIPT TRAINEE.png"
+                  alt="Certificado Desarrollador Full Stack JavaScript Trainee"
+                />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center text-center md:flex-row gap-5">
@@ -47,7 +62,7 @@ const Estudios = () => {
           >
             <div className="flex justify-center m-4">
               <img
-                className="max-h-80"
+                className="max-h-80 rounded-md"
                 src="./img/Certificado-JS-Moderno.webp"
                 alt="Certificado Ciberseguridad"
               />
@@ -67,7 +82,7 @@ const Estudios = () => {
           >
             <div className="flex justify-center m-4">
               <img
-                className="max-h-80"
+                className="max-h-80 rounded-md"
                 src="./img/Certificado.webp"
                 alt="Certificado Curso Desarrollo Web"
               />
@@ -89,7 +104,7 @@ const Estudios = () => {
           >
             <div className="flex justify-center m-4">
               <img
-                className="max-h-80"
+                className="max-h-80 rounded-md"
                 src="./img/certificado-intro-ux-ui-sin-ser-disenador.webp"
                 alt="Certificado Ciberseguridad"
               />
@@ -109,7 +124,7 @@ const Estudios = () => {
           >
             <div className="flex justify-center m-4">
               <img
-                className="max-h-80"
+                className="max-h-80 rounded-md"
                 src="./img/certificado-ciberseguridad-principiantes.webp"
                 alt="Certificado Ciberseguridad"
               />

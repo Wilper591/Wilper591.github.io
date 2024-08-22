@@ -58,12 +58,12 @@ const Tutorias = () => {
   return (
     <>
       <NavBar />
-      <div className="min-h-screen mt-28 md:mt-0">
+      <div className="min-h-screen mt-28 md:mt-20">
         <div className="flex flex-col items-center">
           <h1 className="text-4xl font-bold text-center lg:mt-20 mb-10 text-white">
             Tutorias
           </h1>
-          <p className="md:w-1/2 text-lg font-bold text-justify p-10 bg-gray-300 rounded-md m-5">
+          <p className="text-lg font-bold text-justify p-10 mx-10 lg:w-1/2 bg-gray-300 rounded-md m-5">
             En esta sección, encontrarás reseñas auténticas de estudiantes que
             han tomado mis tutorías en desarrollo web con JavaScript. Aunque no
             soy profesor de profesión, soy un apasionado estudiante y
@@ -81,7 +81,7 @@ const Tutorias = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="px-10 m-10 w-full md:w-1/2">
+          <div className="px-10 m-10 w-full md:w-2/3">
             <form className="bg-white rounded-lg p-5" onSubmit={handleSubmit}>
               {msg && <Alerta alerta={alerta} />}
 
