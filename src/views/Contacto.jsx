@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Alerta from "../components/Alerta";
@@ -10,8 +10,7 @@ const Contacto = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
-  const [cursor, setCursor] = useState("cursor-pointer");
-  const [disabled, setDisabled] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,19 +26,12 @@ const Contacto = () => {
     }
 
     try {
-      setAlerta({ msg: "Enviando Email...", error: true });
-      setCursor("cursor-wait");
-      setDisabled(true);
+      setAlerta({ msg: "Enviando Email...", error: false });
+      setIsSubmitting(true);
       const { data } = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/sendEmail`,
-        {
-          email,
-          nombre,
-          mensaje,
-        }
+        { email, nombre, mensaje }
       );
-      setCursor("cursor-pointer");
-      setDisabled(false);
       setNombre("");
       setEmail("");
       setMensaje("");
@@ -49,59 +41,70 @@ const Contacto = () => {
       }, 3000);
     } catch (error) {
       setAlerta({ msg: error.response.data.msg, error: true });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   const { msg } = alerta;
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-gray-900">
       <NavBar />
-      <div className="h-screen mt-36 md:mt-28 lg:mt-36">
-        <div className="rounded-lg shadow-xl from-sky-950 to-sky-700 bg-gradient-to-l mx-6 flex flex-col lg:flex-row gap-10 md:gap-0 ">
-          <div className="w-full md:w-5/6 lg:w-1/3 px-6 pt-3 lg:ms-16 text-justify text-white">
-            <h1 className="text-justify font-bold text-lg md:text-4xl lg:mt-4 lg:mb-16">
-              Contacto
-            </h1>
-            <p className="text-md md:text-xl my-5 ">
-              <i className="fa-regular fa-envelope font-bold"></i>{" "}
+      <main className="flex-grow container mx-auto px-4 py-8 mt-16">
+        <h1 className="text-4xl font-bold text-center mb-10 text-gray-100">
+          Contacto
+        </h1>
+        <div className="bg-gray-800 rounded-lg shadow-xl p-6 flex flex-col lg:flex-row gap-10">
+          <div className="w-full lg:w-1/3 text-gray-300">
+            <h2 className="text-2xl font-bold mb-6 text-gray-100">
+              Información de Contacto
+            </h2>
+            <p className="my-4 flex items-center">
+              <i className="fa-regular fa-envelope mr-2"></i>
               Jorge_Cerda_591@hotmail.com
             </p>
-            <p className="text-md md:text-xl my-5 ">
-              <i className="fa-brands fa-square-whatsapp"></i> +56 9 3178 0169
+            <p className="my-4 flex items-center">
+              <i className="fa-brands fa-square-whatsapp mr-2"></i>
+              +56 9 3178 0169
             </p>
-            <p className="text-md md:text-xl my-5 hover:text-gray-500">
-              <Link
-                target="_blank"
-                to="https://drive.google.com/file/d/1Tp8aCNioDwfbT7H-gQs7Q6-zZu5pAvML/view?usp=sharing"
-              >
-                <i className="fa-regular fa-file font-bold"></i> Revisa Mi
-                Curriculum Aquí
-              </Link>
-            </p>
-            <p className="text-md md:text-xl my-5 hover:text-gray-500">
-              <Link target="_blank" to="https://github.com/Wilper591">
-                <i className="fa-brands fa-square-github"></i> GitHub
-              </Link>
-            </p>
-            <p className="text-md md:text-xl my-5 hover:text-gray-500">
-              <Link
-                target="_blank"
-                to="https://www.linkedin.com/in/jorgecerda591/"
-              >
-                <i className="fa-brands fa-linkedin"></i> LinkedIn
-              </Link>
-            </p>
+            <Link
+              target="_blank"
+              to="https://drive.google.com/file/d/1Tp8aCNioDwfbT7H-gQs7Q6-zZu5pAvML/view?usp=sharing"
+              className="my-4 flex items-center hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-regular fa-file mr-2"></i>
+              Revisa Mi Curriculum Aquí
+            </Link>
+            <Link
+              target="_blank"
+              to="https://github.com/Wilper591"
+              className="my-4 flex items-center hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-brands fa-square-github mr-2"></i>
+              GitHub
+            </Link>
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/jorgecerda591/"
+              className="my-4 flex items-center hover:text-blue-400 transition-colors"
+            >
+              <i className="fa-brands fa-linkedin mr-2"></i>
+              LinkedIn
+            </Link>
           </div>
 
           <div className="w-full lg:w-2/3">
-            <form className="bg-white p-5" onSubmit={handleSubmit}>
+            <form
+              className="bg-gray-700 p-6 rounded-lg shadow-md"
+              onSubmit={handleSubmit}
+            >
               {msg && <Alerta alerta={alerta} />}
 
-              <div className="mb-5">
+              <div className="mb-4">
                 <label
                   htmlFor="nombre"
-                  className="text-gray-700 uppercase font-bold"
+                  className="block text-gray-300 text-sm font-bold mb-2"
                 >
                   Nombre
                 </label>
@@ -109,16 +112,16 @@ const Contacto = () => {
                   type="text"
                   id="nombre"
                   placeholder="Tu nombre"
-                  className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  className="w-full p-3 bg-gray-600 border border-gray-500 rounded-md text-gray-300 focus:outline-none focus:border-blue-500"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
                 />
               </div>
 
-              <div className="mb-5">
+              <div className="mb-4">
                 <label
                   htmlFor="email"
-                  className="text-gray-700 uppercase font-bold"
+                  className="block text-gray-300 text-sm font-bold mb-2"
                 >
                   Email
                 </label>
@@ -126,40 +129,44 @@ const Contacto = () => {
                   id="email"
                   type="email"
                   placeholder="Tu Email"
-                  className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  className="w-full p-3 bg-gray-600 border border-gray-500 rounded-md text-gray-300 focus:outline-none focus:border-blue-500"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
-              <div className="mb-5">
+              <div className="mb-4">
                 <label
                   htmlFor="mensaje"
-                  className="text-gray-700 uppercase font-bold"
+                  className="block text-gray-300 text-sm font-bold mb-2"
                 >
                   Mensaje
                 </label>
                 <textarea
                   id="mensaje"
                   placeholder="Escribe aquí tu mensaje"
-                  className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                  className="w-full p-3 bg-gray-600 border border-gray-500 rounded-md text-gray-300 focus:outline-none focus:border-blue-500"
+                  rows="4"
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
                 />
               </div>
 
-              <input
+              <button
                 type="submit"
-                className={`bg-gray-600 w-full md:w-1/2 lg:w-1/4 p-3 text-white uppercase font-bold hover:bg-gray-700 rounded-md ${cursor} transition-colors`}
-                value="Enviar Email"
-                disabled={disabled}
-              />
+                className={`w-full bg-blue-600 text-white p-3 rounded-md font-bold hover:bg-blue-700 transition-colors ${
+                  isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Enviando..." : "Enviar Email"}
+              </button>
             </form>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
