@@ -5,7 +5,7 @@ export const certificates = [
       {
         src: "./img/certificado-php-1-2024.jpg",
         alt: "Certificado PHP 1 | 2024",
-        link: "../client/public/img/certificado-php-1-2024.jpg",
+        link: "./client/public/img/certificado-php-1-2024.jpg",
       },
     ],
   },
@@ -27,7 +27,7 @@ export const certificates = [
       {
         src: "./img/certificado-fullstack-javascript.webp",
         alt: "Certificado Desarrollador Full Stack JavaScript Trainee",
-        link: "../client/public/img/certificado-fullstack-javascript.webp",
+        link: "./client/public/img/certificado-fullstack-javascript.webp",
       },
     ],
   },
