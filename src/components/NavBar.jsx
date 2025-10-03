@@ -50,12 +50,12 @@ const NavBar = () => {
             >
               Estudios
             </Link>
-            <Link
+            {/* <Link
               to="/tutorias"
               className="font-bold uppercase text-gray-300 hover:text-blue-400"
             >
               Tutorias
-            </Link>
+            </Link> */}
             <Link
               to="/contacto"
               className="font-bold uppercase text-gray-300 hover:text-blue-400"

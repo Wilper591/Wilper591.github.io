@@ -5,7 +5,7 @@ export const certificates = [
       {
         src: "./img/certificado-php-1-2024.jpg",
         alt: "Certificado PHP 1 | 2024",
-        link: "https://jp.biblioredes.gob.cl/moodle/mod/customcert/view.php?id=2054&downloadown=1",
+        link: "../client/public/img/certificado-php-1-2024.jpg",
       },
     ],
   },
@@ -27,7 +27,7 @@ export const certificates = [
       {
         src: "./img/certificado-fullstack-javascript.webp",
         alt: "Certificado Desarrollador Full Stack JavaScript Trainee",
-        link: "https://reinventate.desafiolatam.com/v/zSALWppSDHGwbxyKUeqwpWy3",
+        link: "../client/public/img/certificado-fullstack-javascript.webp",
       },
     ],
   },
