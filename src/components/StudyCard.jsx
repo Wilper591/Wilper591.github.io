@@ -7,21 +7,32 @@ const StudyCard = ({ certificate }) => {
         {certificate.title}
       </h2>
       <div className="flex flex-wrap justify-center gap-4">
-        {certificate.images.map((image, index) => (
-          <Link
-            key={index}
-            to={image.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full sm:w-auto"
-          >
-            <img
-              className="w-full h-auto sm:h-64 object-contain rounded-md hover:opacity-80 transition-opacity"
-              src={image.src}
-              alt={image.alt}
-            />
-          </Link>
-        ))}
+        {certificate.images.map((image, index) =>
+          image.link ? (
+            <Link
+              key={index}
+              to={image.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full sm:w-auto"
+            >
+              <img
+                className="w-full h-auto sm:h-64 object-contain rounded-md hover:opacity-80 transition-opacity"
+                src={image.src}
+                alt={image.alt}
+              />
+            </Link>
+          ) : (
+            <a href={image.src} target="_blank" rel="noopener noreferrer">
+              <img
+                key={index}
+                className="w-full h-auto sm:h-64 object-contain rounded-md hover:opacity-80 transition-opacity"
+                src={image.src}
+                alt={image.alt}
+              />
+            </a>
+          )
+        )}
       </div>
     </div>
   );
